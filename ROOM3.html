@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CekDokWeb Meeting</title>
+    <script src="https://8x8.vc/vpaas-magic-cookie-ab7c0b64fd4e4a8aa480d639c05dea31/external_api.js" async></script>
+    <link rel="stylesheet" href="stylemeet.css"> 
+    <script type="text/javascript">
+        window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+                roomName: "vpaas-magic-cookie-ab7c0b64fd4e4a8aa480d639c05dea31/CekDokKonsul 3",
+                parentNode: document.querySelector('#jaas-container'),
+                // Make sure to include a JWT if you intend to record,
+                // make outbound calls or use any other premium features!
+                // jwt: "your-jwt-token-here"
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="top-container">
+        <div class="topbar">
+            <div>
+                <a href="tel:+62000000000">+62 000-000-000</a>
+                <a href="mailto:support@cekdokweb.com">support@cekdokweb.com</a>
+            </div>
+            <!-- Div untuk waktu dihapus -->
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="https://info-theardhana-2024.my.canva.site/contact-us">Contact Us</a>
+
+        </div>
+    </div>
+    <div id="jaas-container"></div>
+</body>
+</html>

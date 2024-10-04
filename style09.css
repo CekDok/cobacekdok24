@@ -1,0 +1,150 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi halaman sesuai viewport */
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px; /* Increase padding for better spacing */
+    font-size: 14px; /* Set smaller font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.contact-info .left {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Add more space between phone and email */
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+/* Ensure links in contact info are white */
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+    width: 100%;
+    background-color: #0e99f0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Reduce padding for a more compact look */
+    position: relative; /* Required for absolute positioning of dropdown */
+}
+
+.nav-link {
+    color: white;
+    margin: 0 30px; /* Increase margin for spacing */
+    text-decoration: none;
+    font-size: 14px; /* Set smaller font size */
+    font-weight: bold; /* Make text bold */
+    position: relative; /* Required for dropdown positioning */
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position below the dropdown link */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 12px; /* Adjust padding */
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Set smaller font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.dropdown-content a:hover {
+    background-color: #666;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Container and Box Styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2cm; /* Add a gap of 2 cm between boxes */
+    max-width: 1400px; /* Increase max width of container if needed */
+    margin: 80px auto 20px; /* Increase margin-top to move down further */
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically */
+    overflow: hidden; /* Mencegah scroll di dalam container */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px; /* Set padding untuk memperbaiki tampilan */
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px; /* Ukuran font */
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: 200px; /* Set lebar baru untuk semua kotak */
+    height: 100px; /* Set tinggi baru untuk semua kotak */
+    font-weight: bold; /* Buat teks tebal */
+}
+
+/* Untuk semua kotak, Anda bisa mengganti warna latar belakang saat hover */
+.box:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

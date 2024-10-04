@@ -1,0 +1,57 @@
+html, body, #jaas-container {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c; /* Background color: dark gray */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #007BFF; /* Background color: blue */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.topbar a {
+  color: #ffffff; /* Text color: white */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#sisa-waktu {
+  color: #ffffff; /* Text color: white */
+  font-size: 14px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #333333; /* Background color: gray */
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.nav-menu a {
+  color: #ffffff; /* Text color: white */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .topbar, .nav-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+}
